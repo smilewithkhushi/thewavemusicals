@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'The Wave Musicals',
-  description: '',
+  description: 'A Premier Destination for Exceptional Musical Instruments in Haldwani',
 }
 
 export default function RootLayout({ children }) {

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import About from './components/about'
 import Footer from './components/footer'
 import Testimonials from './components/testimonials'
-
+import React from 'react'
 
 export default function Home() {
   return (
