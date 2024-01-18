@@ -1,7 +1,7 @@
-import { Inter } from 'next/font/google'
+import { Inter, Roboto } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Roboto({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata = {
   title: 'The Wave Musicals',
