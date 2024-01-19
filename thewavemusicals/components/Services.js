@@ -45,13 +45,12 @@ const services_list = [
 const Services = () => {
 
     return (
-        <div className="flex flex-col justify-items-center">
-            <h1>Melodious Symphony, Our Services! </h1>
-
+     
+        <div className="mb-20 mt-6">
             <div className="flex flex-row flex-wrap flex-">
                 {services_list.map((service, index) => (
 
-                    <div key={index} className="m-2 p-2 border-spacing-4">          
+                    <div key={index} className="m-2 px-6 py-4 border text-lg font-normal text-gray-300">          
                     <h2 className="">{service.name}</h2>
                         
                     </div>
