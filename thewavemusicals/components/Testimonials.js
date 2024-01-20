@@ -50,7 +50,7 @@ const Testimonials = () => {
 
     return (
 
-        <div className="flex flex-col my-20 items-center">
+        <div className="flex flex-col my-20 py-10 items-center">
 
 
             {/* heading font design scheme for the website */}
