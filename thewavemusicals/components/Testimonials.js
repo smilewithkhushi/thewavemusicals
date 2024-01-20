@@ -50,13 +50,18 @@ const Testimonials = () => {
 
     return (
 
-        <div className="mb-20 mt-6">
-       
+        <div className="flex flex-col my-20 items-center">
+
+
+            {/* heading font design scheme for the website */}
+            <h1 className="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"> What our
+                <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"> Happy Customers
+                </span> say</h1>
 
 
             {/* Swiper slider for testimonials */}
 
-            <div className="flex overflow-x-auto space-x-4 my-4 p-6 md:mx-10">
+            <div className="flex w-fit overflow-x-auto space-x-4 my-4 p-6">
                 {reviews.map((testimonial, index) => (
                     <div key={index} className="flex-shrink-0 w-1/3 p-6 text-black bg-teal-50 border rounded-lg shadow-lg xs:w-2/3">
 
