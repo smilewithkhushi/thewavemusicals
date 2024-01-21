@@ -46,7 +46,7 @@ const Services = () => {
 
     return (
 
-        <div className="flex flex-col my-20 mt-6 items-center">
+        <div className="flex flex-col my-24 py-8  items-center">
 
             {/* heading font design scheme for the website */}
             <h1 className="my-12 text-4xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"> Melodious Symphony,

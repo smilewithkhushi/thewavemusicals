@@ -37,7 +37,7 @@ const Branding = () => {
       {/* the div box to contain the numbers and the text */}
       <div className="w-full flex flex-row justify-around my-10 ">
         <div className="flex flex-col text-center">
-          <h1 className="text-7xl m-4 font-bold tracking-wide">10+</h1>
+          <h1 className="text-7xl m-4 font-bold tracking-wide sm:text-5xl">10+</h1>
           <p className="text-xl tracking-wider">Years</p>
         </div>
 

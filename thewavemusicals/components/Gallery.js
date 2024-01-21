@@ -2,56 +2,43 @@ import React from "react";
 import Image from "next/image";
 const galleryItems = [
     {
-        id: 1,
-        image: 'instruments1.jpg',
-        desc: "Collection of musical instruments"
+        id: 3,
+        image: 'casio1.jpeg',
+        desc: "Casio Keyboard",
+    },
+
+    {
+        id: 5,
+        image: 'shopview1.jpeg',
+        desc: "Shop view",
     },
     {
-        id: 2,
-        image: 'instruments2.jpg',
-        desc: "Collection of musical instruments"
+        id: 4,
+        image: 'guitars1.jpg',
+        desc: "Collection of guitars",
+    },{
+        id: 6,
+        image: 'casio2.jpg',
+        desc: "Casio Keyboard",
     }
 ]
 const Gallery = () => {
 return (
-
-<div className="relative w-full" data-carousel="slide">
- 
-    <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        
-       {galleryItems.map((id, item) => (
-
-            <div key={id} 
-            className="hidden duration-700 ease-in-out" 
-            data-carousel-item>
-            <Image 
-             src={`/assets/${item.image}`} 
-            width={500}
-            height={500}
-            className="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" 
-            alt={item.desc}/>
+    <div className="w-full flex flex-col items-center justify-between p-2 bg-black text-white">
+        <div className="flex flex-wrap justify-center">
+            {galleryItems.map((item) => (
+                <div key={item.id} className="flex flex-col items-center">
+                    <Image
+                        className="h-4/5 w-4/5 max-w-lg transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0 hover:scale-110 "
+                        src={`/assets/${item.image}`}
+                        width={250}
+                        height={300}
+                        alt={item.desc}
+                    />
+                </div>
+            ))}
         </div>
-  
-        ))}
-  </div>
-    <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span className="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span className="sr-only">Next</span>
-        </span>
-    </button>
-
-</div>
+    </div>
 
 );
 }

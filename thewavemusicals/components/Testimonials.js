@@ -50,7 +50,7 @@ const Testimonials = () => {
 
     return (
 
-        <div className="flex flex-col my-20 py-10 items-center">
+        <div className="flex flex-col my-20 py-10 items-center sm:mx-6">
 
 
             {/* heading font design scheme for the website */}
@@ -61,11 +61,11 @@ const Testimonials = () => {
 
             {/* Swiper slider for testimonials */}
 
-            <div className="flex w-fit overflow-x-auto space-x-4 my-4 p-6">
+            <div className="flex flex-row overflow-x-auto space-x-4 my-4 p-6 sm:mx-8">
                 {reviews.map((testimonial, index) => (
-                    <div key={index} className="flex-shrink-0 w-1/3 p-6 text-black bg-teal-50 border rounded-lg shadow-lg xs:w-2/3">
+                    <div key={index} className="flex-shrink-0 md:w-1/3 p-6 text-black bg-teal-50 border rounded-lg shadow-lg sm:w-100">
 
-                        <h2 className="text-xl my-4">{testimonial.name}</h2>
+                        <h2 className="text-xl my-4 sm:text-lg">{testimonial.name}</h2>
                         <p className="">{testimonial.message}</p>
 
                         <div className="my-4 text-xl">

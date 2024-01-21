@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="flex flex-col my-16 items-center">
+        <div className="flex flex-col my-20 items-center">
 
             {/* heading font design scheme for the website */}
             <h1 className="my-4 text-4xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"> Untangle your

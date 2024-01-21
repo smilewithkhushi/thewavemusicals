@@ -5,25 +5,29 @@ const Footer = () => {
 
 
         <footer class="bg-white dark:bg-black w-full">
+
             <div class=" w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div class="md:flex md:justify-between">
 
-                    <div class="mb-6 md:mb-0">
-                        <a href="https://thewavemuscials.in/" 
-                        className="flex items-center">
-                            
+                    {/* div box containing the logo */}
+                    <div class="mb-6  mx-6md:mb-0">
+                        <a href="https://thewavemuscials.in/"
+                            className="flex items-center">
+
                             <Image src="/assets/logo.png"
-                                className="me-3" 
+                                className="me-3"
                                 width={50}
                                 height={80}
-                                alt="The Wave Musicals Logo" 
-                                 />
+                                alt="The Wave Musicals Logo"
+                            />
                             <span class="self-center text-2xl font-semibold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">The Wave Musicals</span>
                         </a>
                     </div>
-                    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+
+                    {/* div box for the links section on footer */}
+                    <div class="grid grid-cols-2 gap-2 justify-items-right sm:gap-6 sm:grid-cols-3">
                         <div>
-                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Shop</h2>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Shopping</h2>
                             <ul class="text-gray-500 dark:text-gray-400 font-medium">
                                 <li class="mb-4">
                                     <a href="/" class="hover:underline">Guitar</a>
@@ -37,34 +41,47 @@ const Footer = () => {
                                 <li class="mb-4">
                                     <a href="/" class="hover:underline">Harmonium</a>
                                 </li>
-                                
-                                </ul>
-                        </div>
-                        <div>
-                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                                <li class="mb-4">
-                                    <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Instagram</a>
-                                </li>
-                                <li>
-                                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Facebook</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                                <li class="mb-4">
-                                    <a href="#" class="hover:underline">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
+                    {/* div box for socials section on footer */}
+
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    {/* div box for contact section of footer */}
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Us</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Sai complex, near Kapil complex, <br /> opposite Bharat patrol pump, Heera Nagar,  <br /> Haldwani, Uttarakhand 263139</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">+91 89799 20406</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">info@thewavemusicals.com </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
                 </div>
                 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+
+
+                {/* below the horizontal rule on the footer */}
                 <div class="sm:flex sm:items-center sm:justify-between">
                     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">The Wave Muscials™</a>. All Rights Reserved.
                     </span>
@@ -86,6 +103,7 @@ const Footer = () => {
 
                     </div>
                 </div>
+
             </div>
         </footer>
 
