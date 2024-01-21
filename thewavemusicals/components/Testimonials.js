@@ -50,23 +50,23 @@ const Testimonials = () => {
 
     return (
 
-        <div className="flex flex-col my-20 py-10 items-center sm:mx-6">
+        <div className="w-full md:flex flex-col my-20 py-4 items-center sm:mx-6">
 
 
             {/* heading font design scheme for the website */}
             <h1 className="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"> What our
                 <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"> Happy Customers
-                </span> say</h1>
+                </span> say! </h1>
 
 
             {/* Swiper slider for testimonials */}
 
-            <div className="flex flex-row overflow-x-auto space-x-4 my-4 p-6 sm:mx-8">
+            <div className="flex h-4/5 md:flex-row overflow-x-auto space-x-4 my-4 p-6">
                 {reviews.map((testimonial, index) => (
-                    <div key={index} className="flex-shrink-0 md:w-1/3 p-6 text-black bg-teal-50 border rounded-lg shadow-lg sm:w-100">
+                    <div key={index} className="w-2/3 xl:w-1/3 h-90 break-words text-justify flex-shrink-0 p-6 md:m-4 text-black bg-teal-50 border rounded-lg shadow-lg">
 
-                        <h2 className="text-xl my-4 sm:text-lg">{testimonial.name}</h2>
-                        <p className="">{testimonial.message}</p>
+                        <h2 className="md:text-xl my-4 ">{testimonial.name}</h2>
+                        <p className="md:text-lg break-words ">{testimonial.message}</p>
 
                         <div className="my-4 text-xl">
                             {[...Array(5)].map((_, i) => (

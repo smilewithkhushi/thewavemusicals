@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="flex flex-col my-20 items-center">
+        <div className="md:w-full flex flex-col md:px-10 my-20 items-center">
 
             {/* heading font design scheme for the website */}
             <h1 className="my-4 text-4xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"> Untangle your
@@ -11,7 +11,7 @@ const About = () => {
                 </span></h1>
 
             {/* about the organization */}
-            <p className="my-4 text-xl font-normal text-justify text-gray-500 lg:text-xl">
+            <p className="my-4 md:text-xl md:mx-4 font-normal text-justify text-gray-500 lg:text-xl">
 
                 Welcome to The Wave Musicals!
                 <br />

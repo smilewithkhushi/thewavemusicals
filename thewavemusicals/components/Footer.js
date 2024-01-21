@@ -10,7 +10,7 @@ const Footer = () => {
                 <div class="md:flex md:justify-between">
 
                     {/* div box containing the logo */}
-                    <div class="mb-6  mx-6md:mb-0">
+                    <div class="mb-6 md:mb-0">
                         <a href="https://thewavemuscials.in/"
                             className="flex items-center">
 
@@ -25,7 +25,7 @@ const Footer = () => {
                     </div>
 
                     {/* div box for the links section on footer */}
-                    <div class="grid grid-cols-2 gap-2 justify-items-right sm:gap-6 sm:grid-cols-3">
+                    <div class="grid grid-cols-2 gap-8 justify-items-right sm:gap-6 sm:grid-cols-3">
                         <div>
                             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Shopping</h2>
                             <ul class="text-gray-500 dark:text-gray-400 font-medium">
@@ -45,20 +45,6 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    {/* div box for socials section on footer */}
-
-                    <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                            <li class="mb-4">
-                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Instagram</a>
-                            </li>
-                            <li>
-                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Facebook</a>
-                            </li>
-                        </ul>
-                    </div>
-
 
                     {/* div box for contact section of footer */}
                     <div>
@@ -76,6 +62,23 @@ const Footer = () => {
                         </ul>
                     </div>
 
+
+                    {/* div box for socials section on footer */}
+
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    
 
                 </div>
                 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />

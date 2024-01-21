@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "flowbite-react": "^0.7.2",
     "next": "14.0.4",
+    "next-video": "^0.11.2",
     "react": "^18",
     "react-dom": "^18",
     "vercel": "^33.2.0"
